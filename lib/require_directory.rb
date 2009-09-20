@@ -8,7 +8,7 @@ module Kernel
     if add_to_load_path
       $LOAD_PATH << dir
     end
-    Dir.glob(File.join(dir + '/*.rb')).each do |file|
+    Dir.glob(File.join(dir + '/**/*.rb')).each do |file|
       if (skip_invalid_syntax && !(`/usr/bin/env ruby -c #{file}` =~ /Syntax OK/m))
         warn "Invalid syntax in: #{file}"
         next

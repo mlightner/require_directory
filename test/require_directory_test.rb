@@ -4,7 +4,7 @@ class TestDirectoryRequires < Test::Unit::TestCase
 
   def test_require_directory_good
     require_directory  File.dirname(__FILE__) + '/sample_requires'
-    %w{ Widgets Things Stuff }.each do |cl|
+    %w{ Widgets Things Stuff Jimmy }.each do |cl|
       assert Object.const_defined?(cl.to_sym)
       assert_equal Class, eval("#{cl}").class
     end
