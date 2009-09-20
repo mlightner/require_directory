@@ -1,0 +1,12 @@
+sudo gem install mlightner-require_directory
+
+
+
+
+require 'rubygems'
+require 'require_directory'
+
+
+
+
+require_directory 'path/to/my/requires/'
