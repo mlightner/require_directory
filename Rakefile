@@ -1,8 +1,6 @@
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
-require 'rubygems'
-require 'sqlite3'
 
 desc 'Test the library.'
 Rake::TestTask.new(:test) do |t|
